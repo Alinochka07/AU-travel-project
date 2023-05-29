@@ -1,0 +1,77 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-left: 0.3px solid grey;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 0 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #808080;
+    display: flex;
+    transition: 0.3s ease;
+}
+.sidenav #signin {
+    margin-top: 30px;
+}
+  
+.sidenav a:hover, button#sign_out:hover, button.languagebtn:hover  {
+    color: #ff5100;
+    font-weight: bold;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 13px;
+    font-size: 20px;
+    margin-left: 50px;
+    background: none;
+    color: rgb(5, 5, 5);
+    border: none;
+}
+
+button#sign_out {
+    border: none;
+    background: none;
+    padding-left: 33px;
+    color: grey;
+}
+
+#hello_msg {
+    padding: 30px 0 30px 33px;
+}
+button.languagebtn, button.settings {
+    color: grey;
+    padding: 6px 0 0 31px;
+}
+
+
+
+.card.card-body {
+    border: none;
+    line-height: 1;
+    font-weight: normal;
+}
+button.settings {
+    border: none;
+    background: none;
+}
+.card.card-body > a {
+    padding-bottom: 5px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 16px;}
+  }
