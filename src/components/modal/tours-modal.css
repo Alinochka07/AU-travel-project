@@ -1,0 +1,21 @@
+.modal-window {
+    background-color: transparent grey;
+    width: 100%;
+    height: 100%;
+}
+.modal-body {
+    text-align: left;
+}
+button#close-modal {
+    background: #f2f0f0;
+    border-radius: 3px;
+    border: 0.5px solid gray;
+    font-size: 13px;
+    color: #191919;
+}
+.modal-body h3 {
+    font-size: 18px;
+    padding-bottom: 17px;
+}
+
+

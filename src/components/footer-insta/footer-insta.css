@@ -1,0 +1,31 @@
+div.footer-insta-block {
+    width: 1200px;
+    height: 350px;
+    display: inline-flex;
+}
+
+.footer-insta-block > h3 {
+    padding: 135px 0 145px 40px;
+    width: 275px;
+    text-align: left;
+    position: absolute;
+}
+
+.social-icons {
+    position: absolute;
+    padding: 210px 40px;
+}
+span.bi.bi-instagram, span.bi.bi-facebook, span.bi.bi-telegram {
+    font-size: 35px;
+    padding-right: 20px;
+}
+
+span.bi.bi-instagram {
+    color: #f339b9;
+}
+span.bi.bi-facebook {
+    color: #0030ff;
+}
+span.bi.bi-telegram {
+    color: #398af3;
+}
