@@ -1,6 +1,5 @@
 import React from 'react';
 import App from './App';
-import 'firebase/storage';
 import { getAuth } from 'firebase/auth';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -13,17 +12,18 @@ import "firebase/firestore";
 import { Provider } from "react-redux";
 import { ReactReduxFirebaseProvider } from "react-redux-firebase";
 import { createFirestoreInstance } from "redux-firestore";
-import firebase from 'firebase';
-// import 'firebase/compat/auth';
-// import 'firebase/compat/firestore';
-import "firebase/auth";
+import rootReducer from './store/reducers/RootReducer';
+import { BrowserRouter } from "react-router-dom";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import 'firebase/auth';
 import { render } from 'react-dom';
 import thunk from "redux-thunk";
 import { reduxFirestore, getFirestore } from 'redux-firestore';
 import { getFirebase } from 'react-redux-firebase';
 import { getStorage } from "firebase/storage";
-import { BrowserRouter } from "react-router-dom";
-import rootReducer from "./store/reducers/RootReducer";
+import 'firebase/storage';
 
 
 
