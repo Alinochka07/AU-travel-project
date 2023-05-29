@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import {getAuth, onAuthStateChanged} from 'firebase/auth';
+import { AuthProvider } from './pages/account/AuthContext';
+
 
 function App() {
+    const [currentUser, setCurrentUser] = useState([]);
+    const [timeActive, setTimeActive] = useState(false);
+    const auth = getAuth();
+
+
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+          setCurrentUser(user);
+        })
+      }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider value={{currentUser, timeActive, setTimeActive}}>
+        
+    </AuthProvider>
   );
 }
 

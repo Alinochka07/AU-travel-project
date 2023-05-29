@@ -1,0 +1,169 @@
+.verifyEmail {
+    padding-top: 120px;
+}
+
+span.bi.bi-person-fill {
+    font-size: 20px;
+    line-height: 2;
+    padding-left: 5px;
+    margin-right: 0;
+    padding-right: 0;
+}
+span.bi.bi-person-fill:hover {
+    color: #ff5100;
+}
+button.btn.btn-link.sign-up-google {
+    background: #ff5100;
+    color: white;
+    text-decoration: none;
+}
+
+
+span.agree {
+    padding-left: 5px;
+    color: black;
+    font-size: 11px;
+} 
+button.btn.btn-link.create_account_btn {
+    background: #ff5100;
+    text-decoration: none;
+    color: white;
+    border-radius: 21px;
+    width: 65%;
+    display: inline-block;
+    margin-top: 5px;
+   
+}
+
+h3#or {
+    padding-bottom: 9px;
+    text-align: center;
+    padding-right: 10px;
+    color: black;
+    margin-bottom: 0;
+}
+button.btn.btn-link.sign-up-google {
+    background: white;
+    color: #0275ff;
+    text-decoration: none;
+    border: 1px solid;
+    width: 65%;
+    font-size: 14px;
+    border-radius: 22px
+}
+.side-modal > p {
+    text-align: center;
+}
+
+
+form p > input, form p > span {
+    margin-top: 11px;
+}
+
+.email-address, .passw, .conf-passw {
+    font-size: 13px;
+}
+label#fname, #lname, #eml, #pss, #confpss {
+    font-size: 15px;
+    text-align: left;
+}
+
+
+
+input#firstName, input#lastName, input#password, input#confirmPassword {
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border: 0.5px solid;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+input#email {
+    width: 95.5%;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 3px;
+    border: 0.5px solid;
+    margin-bottom: 10px;
+}
+
+.reg-more > p {
+    padding-top: 20px;
+    font-size: 11px;
+    text-align: center;
+    width: 449px;
+    height: 20px;
+    margin-top: -16px;
+}
+
+button#login-me {
+    background: #00cdff;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    width: 65%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.registration_form > .first-name, .registration_form > .passw {
+    margin-right: 5px;
+}
+.login-form > .email-address {
+    margin-right: 5px;
+}
+
+.registration_form > .passw, .registration_form > .conf-passw {
+    display: inline-block;
+    width: 208px;
+}
+
+.registration_form > .first-name, .registration_form > .last-name {
+    display: inline-block;
+    width: 208px;
+}
+
+.login-form > .email-address, .login-form > .passw {
+    display: inline-block;
+    width: 208px;
+}
+
+.form-control {
+    font-size: 13px;
+    margin-top: -20px;
+}
+p.signal_msg {
+    color: red;
+    font-size: 12px;
+    margin: 0;
+}
+input#login-email, input#login-password {
+    width: 100%;
+    height: 31px;
+    border-radius: 3px;
+    border: 0.5px solid;
+    padding-left: 5px;
+}
+input#login-email {
+    margin-bottom: 8px;
+}
+.info-messages > p {
+    margin: 0;
+    padding-bottom: 2px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.register-page.container {
+    width: 490px;
+    padding-top: 140px;
+    background: none;
+    height: 650px;
+}
+
+.login-page.container {
+    width: 490px;
+    height: 400px;
+    padding-top: 175px;
+}
