@@ -1,18 +1,14 @@
-import React, { Component, useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import "./tours-modal.css";
 import Modal from 'react-bootstrap/Modal';
-import DataTours from "../datatours/data-tours";
-import Content from "../choose-destination/choose-dest";
-import SelectedContext from "../choose-destination/choose-dest";
-import Select from "../choose-destination/choose-dest";
-import { useStore } from "react-context-hook";
+
 
 
 
 
 export default function ToursModal(props) {
 
-    // const {selected, setSelected} = useContext(SelectedContext);
+    const {selected, setSelected} = useContext();
     const [show, setShow] = useState(false);
     const [hasError, setHasError] = useState(false);
 

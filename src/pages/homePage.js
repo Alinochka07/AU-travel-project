@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../App.css";
 import MainHeader from "../components/1_main-header";
 import BoxMenu from "../components/3_middle-box-menu";

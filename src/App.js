@@ -46,7 +46,7 @@ function App() {
                 !currentUser ? <SignUp/> : <Navigate to='/'/>
             } />
             <Route path='/verify-email' element={<VerifyEmail/>} /> 
-            <Route path='/tours' element={<Tours/>} />
+            {/* <Route path='/tours' element={<Tours/>} /> */}
             <Route path='/tour/:id' element={<TourDetails/>} />
             {/* <Route exact path='/admin/create' element={<AdminCreateTour/>}/> */}
             <Route path='/all-popular-destinations' element={<AllPopularDestinations/>}/>
