@@ -80,7 +80,7 @@ input#firstName, input#lastName, input#password, input#confirmPassword {
     font-size: 13px;
 }
 input#email {
-    width: 95.5%;
+    width: 90.5%;
     height: 30px;
     padding-left: 5px;
     border-radius: 3px;

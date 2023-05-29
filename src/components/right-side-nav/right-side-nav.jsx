@@ -21,7 +21,7 @@ export default function SideNav(props) {
             <div>
                 <div id="mySidenav" className='sidenav' style={{width: width, paddingTop: '20px' }}>
                     <button className="closebtn" onClick={closeSidenav}>X</button>
-                    {/* <img src={au_travel_logo} width="100px" style={{paddingLeft: '40px'}}></img> */}
+                    <img src={au_travel_logo} width="100px" style={{paddingLeft: '40px'}}></img>
 
                     {/* <img alt="profile_image" id="avatar_image" width="70px" src={
                         !SignInWithGoogle ? localStorage.getItem('avatar') : au_travel_logo}>

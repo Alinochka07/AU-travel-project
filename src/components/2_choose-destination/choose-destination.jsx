@@ -2,7 +2,7 @@ import React, { useEffect, useState, createContext, useContext } from "react";
 import { db } from "../../index";
 import "./choose-destination.css";
 import { useNavigate } from "react-router-dom";
-import DateChoose from "./date-picker";
+// import DateChoose from "./date-picker";
 
 
 export const SelectedContext = createContext();

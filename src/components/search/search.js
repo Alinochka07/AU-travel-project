@@ -37,13 +37,13 @@ const SearchFunction = (props) => {
                             <button type="button" className="searchbtn"><span className="bi bi-search" ></span></button>
                             </NavLink>
                             <div>
-                                {filteredTours}
+                                {/* {filteredTours}
                                 {tours && tours.data.map(tour => {
                                     <div key={tour.id}>{tour.title}</div>
                                 })} 
                                 {tours && tours.filter(tour => tour.includes(searchValue).map(filteredTour => {
                                     return <div key={filteredTour.id}>{filteredTour.title}</div>
-                                }))} 
+                                }))}  */}
                             </div>
                     </span>
                 </form>

@@ -44,16 +44,16 @@ export const AllPopularDestinations = () => {
                                 <div className="images">
                                     <div className="image-list">
                                      
-                                        <div className="img"><img className="img-fluid" alt="au-travel" width="650px" height="540px" 
+                                        {/* <div className="img"><img className="img-fluid" alt="au-travel" width="650px" height="540px" 
                                         // src={tour.image}
                                         >
-                                            </img></div>
+                                            </img></div> */}
                                         
                                     </div>
                                 </div>
                                 
                             </div>
-                        )
+                        
                     {/* })  */}
                 {/* } */}
                 

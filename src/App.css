@@ -1,38 +1,85 @@
-.App {
+.container {
+  width: 1200px;
   text-align: center;
+  position: unset;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tours-page {
+  padding-top: 110px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container.admin-create-tour {
+  padding-top: 155px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label.admin-label {
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+textarea#details {
+  height: auto;
+  font-size: 14px;
+}
+
+.container.admin-create-tour {
+  padding-top: 155px;
+  width: 43%;
+}
+
+label.upload-photo {
+  font-size: 14px;
+  padding-right: 10px;
+  margin-left: 84px;
+}
+
+button.btn.btn-success {
+  margin-top: 10px;
+}
+
+h3.grey-text.text-darken-3 {
+  padding-bottom: 15px;
+}
+.container.section.tour-details {
+  padding-top: 130px;
+}
+
+ul.images-list {
+  list-style: none;
+  float: right;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+}
+.images {
+  padding-right: 10px;
+  display: flex;
+}
+.image-list {
+  float: left;
+  display: flex;
+  padding-right: 10px;
+}
+.img {
+  padding: 0 25px;
+}
+p.left {
+  text-align: left;
+}
+.travel-info {
+  text-align: left;
+  padding-left: 25px;
+}
+.travel-info p {
+  font-size: 14px; 
+  color: black;
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: black;
+}
+button.btn.btn-success {
+  margin-bottom: 100px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
