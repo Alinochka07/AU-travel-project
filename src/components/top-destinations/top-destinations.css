@@ -1,0 +1,63 @@
+.top-destinations {
+    display: inline-flex;
+    margin: 12px 15px 100px 15px;
+    width: 1000px;
+    padding-top: 35px;
+    cursor: pointer;
+    box-shadow: 1px 1px 20px #cccbcb;
+}
+
+.top-box {
+    width: 230px;
+    height: 280px;
+    margin-bottom: 36px;
+    margin-right: 18px;
+    /* transition: background-image 2s ease-in 300ms; */
+}
+.top-box:nth-last-child(-n+3):hover {
+    background-color: white;
+    opacity: 40%;
+}
+
+.top-box:nth-child(1) {
+    padding: 20px;
+    text-align: left;
+}
+
+
+#ist {
+    background-image: url("../../img/web-photos/istanbul-blue-mosque.jpeg");
+}
+
+#dub {
+    background-image: url("../../img/web-photos/Dubai.jpeg");
+}
+
+#egpt {
+    background-image: url("../../img/web-photos/Egypt.jpeg");
+}
+
+.top-box h3 > span {
+    color: #ff5100;
+}
+.top-box > p {
+    font-size: 13px;
+    color: gray;
+}
+
+button#learnMore {
+    background: #ff5100;
+    border: 1px solid #ff5100;
+    color: white;
+    width: 146px;
+    height: 33px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#ist > h5, #dub > h5, #egpt > h5  {
+    color: white;
+    line-height: 26;
+    text-align: left;
+    padding-left: 16px;
+}
