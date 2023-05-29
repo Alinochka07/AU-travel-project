@@ -1,0 +1,35 @@
+.myheader {
+    display: inline-block;
+    background-image: url('../../img/web-photos/banner-au.png');
+    height: 640px;
+    width: 1200px;
+    text-align: left;
+}
+
+.myheader #h1 {
+    padding-top: 230px;
+    padding-left: 60px;
+    font-size: 60px;
+    font-family:'Helvetica Neue';
+}
+#h1_1 {
+    padding-left: 60px;
+    font-size: 60px;
+    font-family:'Helvetica Neue';
+}
+
+.main_header_btn {
+    margin-left: 60px;
+}
+
+button.main_header_btn {
+    background: #ff5100;
+    width: 385px;
+    height: 36px;
+    border: none;
+    box-shadow: 2px 2px 20px 0 #f1f5f6;
+    color: #fcfbfb;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 3px;
+}

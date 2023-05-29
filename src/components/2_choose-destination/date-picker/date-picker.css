@@ -1,0 +1,13 @@
+.date-picker {
+    display: inline-flex;
+}
+
+.rdrDateDisplayWrapper {
+    background-color: transparent;
+}
+
+.rdrCalendarWrapper {
+    color: #000000;
+    font-size: 12px;
+    background: transparent;
+}

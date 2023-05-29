@@ -1,0 +1,99 @@
+
+.choose-destination {
+    width: 60%;
+    display: inline-block;
+    margin-top: -43px;
+    background: white;
+    box-shadow: 2px 2px 20px #b3abab;
+    z-index: 8;
+}
+
+
+table.table {
+    border: 1px solid white;
+    width: 97%;
+    margin: 10px;
+}
+.table > thead {
+    vertical-align: bottom;
+    text-align: center;
+    color: #ff5100;
+}
+
+.thead {
+    background: white;
+}
+
+button.btn.btn-light.dates, .btn.btn-light, .btn-light {
+    box-shadow: none;
+    background: transparent;
+    border: 1px solid #ced4d9;
+    border-radius: 4px;
+    width: 164px;
+    height: 38px;
+    color: #495157;
+    text-align: center;
+    line-height: 2.3;
+    margin-top: 1px;
+
+}
+button.btn.btn-light.dates:hover {
+    color: #ff5100;
+}
+
+p#close-calendar {
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: right;
+    cursor: pointer;
+    padding-right: 8px;
+    padding-bottom: 4px;
+}
+
+div#calendar-window {
+    box-shadow: 1px 0px 20px #c1b9b9;
+    border-radius: 5px;
+}
+
+.btn.tours-search {
+    background: #ff5100;
+    color: white;
+    cursor: pointer;
+}
+.btn.tours-search:hover {
+    color: white;
+    background: #d14403;
+}
+th#table-calendar {
+    width: 380px;
+}
+
+.css-b62m3t-container {
+    position: relative;
+    box-sizing: border-box;
+    width: 380px;
+}
+
+select.select_option {
+    width: 333px;
+    height: 39px;
+    border: 1px solid #ced4d8;
+    border-radius: 4px;
+    color: #4a5157;
+    text-align: center;
+}
+.display_result {
+    margin-top: 30px;
+}
+
+button.searchfortour {
+    width: 200px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    background: #ff5100;
+    color: white;
+}
+th#button-th {
+    width: 29%;
+}
