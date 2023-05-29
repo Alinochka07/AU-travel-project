@@ -1,0 +1,24 @@
+table.table#reviews-table {
+    border: 1px solid white;
+    width: 900px;
+    margin: 10px;
+    display: inline-table;
+    
+}
+.table td {
+    border-top: none;
+    text-align: center;
+}
+td#first-table, td#third-table {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 215px;
+    background: pink;
+}
+
+td#second-table {
+    width: 468px;
+    background: aliceblue;
+}
