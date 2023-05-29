@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import "./middle-box-menu.css";
 import map_icon from "../../img/web-photos/map-icon.png";
 import binocular from "../../img/web-photos/binocular.png";
