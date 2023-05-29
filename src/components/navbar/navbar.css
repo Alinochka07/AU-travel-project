@@ -1,0 +1,132 @@
+.header {
+    background: white;
+    position: fixed;
+    width: 100%;
+    box-shadow: -1px -4px 20px 0px #afb0b0;
+    z-index: 9;
+}
+
+nav.topnav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 10px 0;
+    box-shadow: -1px 2px 20px #aea9a9;
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 9;
+}
+
+
+.languagebtn {
+    border: none;
+    background: transparent;
+    padding-left: 8px
+}
+
+img#main-logo {
+    width: 150px;
+    padding-top: 5px;
+}
+
+
+.left-side-logo {
+    float: left;
+}
+
+.header_menu_tabs {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 19px;
+}
+
+
+.right-side-menu {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    width: 540px;
+}
+
+.right-side-menu > span {
+    padding: 2px 5px 2px 5px;
+    border-right: 0.2px solid gray;
+    height: 40px;
+    line-height: 1.9;
+}
+.right-side-menu > span:nth-child(3) {
+    border-right: none;
+}
+
+
+button.russian, button.kyrgyz {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+button.russian {
+    padding-left: 5px;
+}
+
+button.kyrgyz {
+    padding-right: 5px;
+    margin-left: -33px;
+}
+
+.menu {
+    margin: 14px 0;
+    background: #ffa000;
+    padding: 6px 17px;
+    border-radius: 23px;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+button#dropdownMenuButton {
+    color: #6a6d6d;
+    line-height: 2.2;
+}
+
+.dropdown-item {
+    font-size: 13px;
+}
+
+.dropdown-menu.lng.show {
+    border-radius: 10px;
+    margin-left: -111px;
+    box-shadow: -1px 2px 15px 0px #b0acac;
+    margin-top: 21px;
+  
+}
+
+.btn.btn-link, .btn.btn-transparent {
+    box-shadow: none;
+    
+}
+button.login {
+    background: none;
+    border: none;
+}
+
+.accountbtn {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+span.bi.bi-globe:hover, button.languagebtn:hover {
+    color: #ff5100;
+}
+
+button#sidenavbar {
+    line-height: 2.3;
+    color: grey;
+}
