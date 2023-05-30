@@ -18,11 +18,10 @@ input.input_search {
     font-size: 14px;
     padding-left: 15px;
 }
-.searchdown {
-    position: absolute;
-    display: flex;
-    background: white;
+
+.search_dropdown {
     width: 350px;
-    height: 100px;
-    border-radius: 5px;
+    background: white;
+    padding: 5px 10px;
+    border: 1px solid white;
 }

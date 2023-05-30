@@ -4,7 +4,7 @@ import MainHeader from "../components/1_main-header";
 import BoxMenu from "../components/3_middle-box-menu";
 import TopDestinations from "../components/top-destinations";
 import ServiceBlock from "../components/services-block";
-import PopularDestinations from "../components/popular-destinations";
+import PopularDestinations from "../pages/tours-page/popular-destinations";
 import FooterInstaBlock from "../components/footer-insta";
 import Footer from "../components/footer/footer";
 import { compose } from "redux";

@@ -18,13 +18,11 @@ import { useFirestoreConnect } from 'react-redux-firebase'
 
 
 
-export const AllPopularDestinations = () => {
+export const AllPopularDestinations = ({tours}) => {
 
-    const [popularTours, setPopularTours]= useState([]);
+    if (tours) {
+        console.log(tours)
     
-
-   
-
     return (
             <div className='container'>
                 <div className="container section tour-details">  
@@ -60,22 +58,23 @@ export const AllPopularDestinations = () => {
                 </div>
             </div>
     )
+    }
     
 
 }
 
 
-export default AllPopularDestinations;
+// export default AllPopularDestinations;
 
 
 
-// const mapStateToProps = (state) => {
-//     return {
-//         tours: state.firestore.data.tours
+const mapStateToProps = (state) => {
+    return {
+        tours: state.firestore.data.tours
 
-//     }
-// }
+    }
+}
     
-// export default compose(
-//     connect(mapStateToProps), firestoreConnect()
-//     )(AllPopularDestinations);
+export default compose(
+    connect(mapStateToProps), firestoreConnect()
+    )(AllPopularDestinations);

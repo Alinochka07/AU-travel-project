@@ -1,5 +1,5 @@
 import React from "react";
-import "../../components/popular-destinations/popular-destinations.css"
+import "./popular-destinations.css";
 import { useNavigate } from "react-router-dom";
 import { compose } from "redux";
 import { connect } from "react-redux";
@@ -7,7 +7,6 @@ import { firestoreConnect } from "react-redux-firebase";
 import 'firebase/storage';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
-import AllPopularDestinations from "./AllPopularDestinations";
 
 
 function PopularDestinations({tours}){

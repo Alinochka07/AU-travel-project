@@ -5,7 +5,7 @@ import ChooseDestinationOption from "../../components/2_choose-destination";
 import BoxMenu from "../../components/3_middle-box-menu";
 import TopDestinations from "../../components/top-destinations";
 import ServiceBlock from "../../components/services-block";
-import PopularDestinations from "../../components/popular-destinations";
+import PopularDestinations from "../tours-page/popular-destinations";
 import FooterInstaBlock from "../../components/footer-insta";
 import Footer from "../../components/footer/footer";
 
