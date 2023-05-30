@@ -74,15 +74,15 @@ export {auth, db, storage};
 
 
 render(
-		<React.StrictMode>
+		// <React.StrictMode>
 			<Provider store={store}>
 				<ReactReduxFirebaseProvider {...rrfProps}>
 					<BrowserRouter>
 						<App/>
 					</BrowserRouter>
 				</ReactReduxFirebaseProvider>
-			</Provider>
-		</React.StrictMode>,
+			</Provider>,
+		// </React.StrictMode>,
 		document.getElementById('root')
 );
 

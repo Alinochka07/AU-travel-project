@@ -34,7 +34,7 @@ function HomePage(props) {
     }
 
 
-const mapStateToProps = (state) => {
+const getDerivedStateFromProps = (state) => {
     return {
         tours: state.firestore.ordered.tours
         // tours: state.tour.tours // this is used for not Firebase connection
@@ -44,7 +44,7 @@ const mapStateToProps = (state) => {
 
 export default compose(
     firestoreConnect(['tours']),
-    connect((mapStateToProps))
+    connect((getDerivedStateFromProps))
     )(HomePage);
 
 
