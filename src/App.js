@@ -9,9 +9,7 @@ import HomePage from "./pages/homePage";
 import SignIn from "./pages/account/signIn";
 import SignUp from "./pages/account/signUp";
 import VerifyEmail from "./pages/account/verifyEmail";
-import ToursApp from "./pages/tours-page/Tours";
 import TourDetails from "./pages/tours-page/tour-details";
-import Tours from "./pages/tours-page/Tours";
 import AllPopularDestinations from "./pages/tours-page/AllPopularDestinations"
 import SearchPage from "./pages/searchPage";
 
@@ -46,9 +44,7 @@ function App() {
                 !currentUser ? <SignUp/> : <Navigate to='/'/>
             } />
             <Route path='/verify-email' element={<VerifyEmail/>} /> 
-            {/* <Route path='/tours' element={<Tours/>} /> */}
             <Route path='/tour/:id' element={<TourDetails/>} />
-            {/* <Route exact path='/admin/create' element={<AdminCreateTour/>}/> */}
             <Route path='/all-popular-destinations' element={<AllPopularDestinations/>}/>
             <Route path='/results' element={<SearchPage/>}/>
             

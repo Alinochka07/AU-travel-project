@@ -7,21 +7,21 @@
 }
 
 .popular-destinations > .popular-blocks {
-    display: inline-flex;
-    align-content: center;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
 }
 
 .popular-blocks > div {
-    width: 290px;
-    height: 350px;
+    width: 370px;
+    height: 270px;
 }
 
 .pop-block {
-    margin-top: 118px;
+    display: flex;
+    align-items: flex-end;
     margin: 10px;
     box-shadow: 1px 1px 20px #cccbcb;
-    
+    justify-content: center;
 }
 
 /* .pop-block-2 {
@@ -58,13 +58,12 @@ div#triangle-right {
 
 div.info-block {
     position: absolute;
-    margin-top: -37px;
     background: white;
     z-index: 3;
     width: 255px;
     height: 100px;
-    margin-left: 18px;
     box-shadow: 1px 1px 20px #cccbcb;
+    margin-bottom: -30px;
 }
 .info-block h6 {
     padding: 9px 0 2px 0;

@@ -1,57 +1,57 @@
-import React, { useState, useContext } from "react";
-import "./tours-modal.css";
-import Modal from 'react-bootstrap/Modal';
+// import React, { useState, useContext } from "react";
+// import "./tours-modal.css";
+// import Modal from 'react-bootstrap/Modal';
 
 
 
 
 
-export default function ToursModal(props) {
+// export default function ToursModal(props) {
 
-    const {selected, setSelected} = useContext();
-    const [show, setShow] = useState(false);
-    const [hasError, setHasError] = useState(false);
+//     const {selected, setSelected} = useContext();
+//     const [show, setShow] = useState(false);
+//     const [hasError, setHasError] = useState(false);
 
-    const handleclose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    // const {selected} = useContext(SelectedContext)
+//     const handleclose = () => setShow(false);
+//     const handleShow = () => setShow(true);
+//     // const {selected} = useContext(SelectedContext)
 
 
-    return (
+//     return (
         
-        <div>
+//         <div>
             
-            <button onClick={handleShow} data-toggle="modal"
-                id="modal-window" aria-haspopup="true" className="btn btn-outline tours-search">Нажми для просмотра
-            </button>
+//             <button onClick={handleShow} data-toggle="modal"
+//                 id="modal-window" aria-haspopup="true" className="btn btn-outline tours-search">Нажми для просмотра
+//             </button>
             
-            <Modal
-             className="modal-window" show={show} onHide={handleclose}>
-                <Modal.Header closeButton>
-                    <div>
+//             <Modal
+//              className="modal-window" show={show} onHide={handleclose}>
+//                 <Modal.Header closeButton>
+//                     <div>
                         
-                    </div>
-                </Modal.Header>
-                <div className="body-modal">
-                    <Modal.Body>
-                        <div>
-                            You had chosen {}              
-                        </div>
-                    </Modal.Body>
-                </div>
-                <Modal.Footer>
+//                     </div>
+//                 </Modal.Header>
+//                 <div className="body-modal">
+//                     <Modal.Body>
+//                         <div>
+//                             You had chosen {}              
+//                         </div>
+//                     </Modal.Body>
+//                 </div>
+//                 <Modal.Footer>
                     
-                    <button id="close-modal" 
+//                     <button id="close-modal" 
                     
-                    onClick={function(e){handleclose()}}>
-                        Закрыть
+//                     onClick={function(e){handleclose()}}>
+//                         Закрыть
                         
-                    </button>
-                </Modal.Footer>
-            </Modal>
-        </div>
-)
-}
+//                     </button>
+//                 </Modal.Footer>
+//             </Modal>
+//         </div>
+// )
+// }
 
 
 
