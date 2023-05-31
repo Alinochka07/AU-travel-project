@@ -4,9 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { compose } from "redux";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
-import 'firebase/storage';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
 
 
 function PopularDestinations({tours}){

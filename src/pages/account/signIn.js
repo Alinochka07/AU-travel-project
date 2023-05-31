@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "./account.css";
-// import { auth } from "../../index";
-// import SignInWithGoogle from "./signInWithGoogle";
 import google from "../../img/web-photos/google.png";
 import { useAuthValue } from "./AuthContext";
 import { useNavigate } from "react-router-dom";
-import { getAuth, signInWithEmailAndPassword, sendEmailVerification, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import { Link } from "react-router-dom";
 import { useFirebase } from "react-redux-firebase";
 

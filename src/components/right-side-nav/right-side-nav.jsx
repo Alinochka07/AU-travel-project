@@ -8,7 +8,6 @@ import us_flag from "../../img/flags/us.png";
 import { signOut } from "firebase/auth";
 import { auth } from "../../index";
 import { useAuthValue } from "../../pages/account/AuthContext";
-// import SignInWithGoogle from "../../pages/account/signInWithGoogle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
 
@@ -21,7 +20,7 @@ export default function SideNav(props) {
             <div>
                 <div id="mySidenav" className='sidenav' style={{width: width, paddingTop: '20px' }}>
                     <button className="closebtn" onClick={closeSidenav}>X</button>
-                    <img src={au_travel_logo} width="100px" style={{paddingLeft: '40px'}}></img>
+                    <img alt="au travel logo" src={au_travel_logo} width="100px" style={{paddingLeft: '40px'}}></img>
 
                     {/* <img alt="profile_image" id="avatar_image" width="70px" src={
                         !SignInWithGoogle ? localStorage.getItem('avatar') : au_travel_logo}>

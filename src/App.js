@@ -25,7 +25,7 @@ function App() {
         onAuthStateChanged(auth, (user) => {
           setCurrentUser(user);
         })
-      }, []);
+      }, [auth]);
 
   return (
     <AuthProvider value={{currentUser, timeActive, setTimeActive}}>

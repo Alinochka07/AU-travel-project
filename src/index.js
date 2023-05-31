@@ -19,7 +19,6 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import 'firebase/auth';
-import { render } from 'react-dom';
 import thunk from "redux-thunk";
 import { reduxFirestore, getFirestore } from 'redux-firestore';
 import { getFirebase } from 'react-redux-firebase';
@@ -76,7 +75,7 @@ export {auth, db, storage};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-		// <React.StrictMode>
+		<React.StrictMode>
 			<Provider store={store}>
 				<ReactReduxFirebaseProvider {...rrfProps}>
 					<BrowserRouter>
@@ -84,7 +83,7 @@ root.render(
 					</BrowserRouter>
 				</ReactReduxFirebaseProvider>
 			</Provider>
-		// </React.StrictMode>
+		</React.StrictMode>
 );
 
 

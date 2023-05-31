@@ -1,5 +1,4 @@
 import React from 'react'
-import { useParams } from "react-router-dom";
 import { compose } from "redux";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
@@ -9,15 +8,11 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 
 
-const SearchPage = (props) => {
-  	const {id} = useParams()
-  
-  // const id = props.match.params.id
-  	console.log(props);
-  	const {tour} = props;
+const SearchPage = ({tours}) => {
+  	
+	const tour = Object.entries(tours).map(tour => tour[1])
 
-  	if(tour){
-    	// const {title, details, price, visa, dates, onbase, onbase2, destination, image, image2, image3, createdAt} = tours[id];
+  	if(tours){
     	return (
             <div className="container section tour-details">
               	<p className="left">ID:{tour.id}</p>
@@ -34,16 +29,10 @@ const SearchPage = (props) => {
 					</div>
 					<div className="images">
 						<div className="image-list">
-							{/* {image ? 
-							<div className="img"><img className="img-fluid" alt="au-travel" width="650px" height="540px" src={image}></img></div>
+							{tour.image ? 
+							<div className="img"><img className="img-fluid" alt="au-travel" width="650px" height="540px" src={tour.image}></img></div>
 							: null }
-							{ image2 ?
-							<div className="img"><img className="img-fluid" alt="" width="650px" height="540px" src={image2}></img></div>
-								: null }
-							{ image3 ?
-							<div className="img"><img className="img-fluid" alt="" width="650px" height="540px" src={image3}></img></div>
-							: null
-							} */}
+							
 						</div>
 					</div>
 				</div>

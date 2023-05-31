@@ -1,7 +1,6 @@
-import React, {Component} from "react";
+import React from "react";
 import "./service-block.css";
 import beach from "../../img/web-photos/beach.png";
-import blue_clouds from "../../img/web-photos/blue-clouds.png";
 
 
 export default function ServiceBlock() {

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "./account.css";
-// import { auth } from '../../index';
 import {useNavigate, Link} from 'react-router-dom';
 import {getAuth, createUserWithEmailAndPassword, sendEmailVerification, updateProfile} from 'firebase/auth';
-import {useAuthValue} from './AuthContext';
+// import {useAuthValue} from './AuthContext';
 
 
 export default function SignUp() {
@@ -25,7 +24,7 @@ export default function SignUp() {
     const [shortPassword, setShortPassword] = useState(false);
     
     const navigate = useNavigate();
-    const {setTimeActive} = useAuthValue();
+    // const {setTimeActive} = useAuthValue();
     const auth = getAuth();
 
     const onChecked = () => {
@@ -202,7 +201,7 @@ export default function SignUp() {
                         onChange={onChecked}  
                         className="agree-checkbox"  type="checkbox"></input>
                         <span className="agree">Я принимаю условия о регистрации указанные в  
-                        <a href="#"> Cоглашении о регистрации</a></span>
+                        <a href="/"> Cоглашении о регистрации</a></span>
                     </p>
                     <p id="ifNotChecked"></p>
                 </div>

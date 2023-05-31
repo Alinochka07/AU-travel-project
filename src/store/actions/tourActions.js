@@ -1,6 +1,6 @@
 export const createTour = (tour) => {
-    return (dispatch, getState, 
-        { getFirebase, getFirestore }) => {
+    return (dispatch, _getState, 
+        { getFirestore }) => {
         // make async call to database
         const firestore = getFirestore();
         firestore.collection('tours').add({

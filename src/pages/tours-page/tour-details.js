@@ -8,14 +8,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const TourDetails = (props) => {
-  	const {id} = useParams()
+  	const {id} = useParams();
   
-  // const id = props.match.params.id
   	console.log(props);
   	const {tours} = props;
 
   	if(tours){
-    	const {title, details, price, visa, dates, onbase, onbase2, destination, image, image2, image3, createdAt} = tours[id];
+    	const {title, details, price, visa, dates, onbase, onbase2, destination, image, image2, image3} = tours[id];
     	return (
             <div className="container section tour-details">
               	<p className="left">ID:{id}</p>

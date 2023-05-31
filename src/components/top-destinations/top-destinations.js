@@ -1,26 +1,13 @@
-import React, {Component} from "react";
+import React from "react";
 import "./top-destinations.css";
-import istanbul from "../../img/web-photos/istanbul-blue-mosque.jpeg";
-import egypt from "../../img/web-photos/Egypt.jpeg";
-import dubai from "../../img/web-photos/Dubai.jpeg";
-import { useParams } from "react-router-dom";
 import { compose } from "redux";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
-import {db} from "../../index"
-import {doc, getDoc, collection, onSnapshot} from "firebase/firestore"
 
 
 function TopDestinations(props) {
-    const {id} = useParams()
     const {tours} = props;
-    // console.log(tours)
-    
-    // const snapshot = db.collection('tours').doc(id).get();
-    // const data = snapshot.data();
-    // console.log(data)
-    
-
+   
     if (tours) {
    
         return(

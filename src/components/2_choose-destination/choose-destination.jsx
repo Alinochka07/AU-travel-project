@@ -2,7 +2,7 @@ import React, { useEffect, useState, createContext, useContext } from "react";
 import { db } from "../../index";
 import "./choose-destination.css";
 import { useNavigate } from "react-router-dom";
-// import DateChoose from "./date-picker";
+import DateChoose from "./date-picker/date-picker";
 
 
 export const SelectedContext = createContext();
@@ -71,13 +71,13 @@ const ChooseDestination = ({children}) => {
                                     
                                 </th>
                                 <th id="table-calendar">
-                                    {/* <button className="btn btn-light dates" onClick={this.onClickButton}>Выбрать даты</button> */}
+                                    <button className="btn btn-light dates" onClick={this.onClickButton}>Выбрать даты</button>
                                     <div id="calendar-window">
                                         <div 
-                                        // hidden={ !this.state.hidden ? true : false }
+                                        hidden={ !this.state.hidden ? true : false }
                                         >
-                                            {/* <DateChoose /> */}
-                                            {/* <p id="close-calendar" onClick={this.onClickButton}>x</p> */}
+                                            <DateChoose />
+                                            <p id="close-calendar" onClick={this.onClickButton}>x</p>
                                         </div>
                                     </div>
                                 </th>

@@ -9,28 +9,28 @@ export default function Footer() {
             <div className="contact-footer">
                 <img alt="au-travel-logo" src={au_logo} width="200px"></img>
                 <p className="full-text">Путешествуй с нами и реализуй свою мечту! Покоряй красивые места, узнавай новые культуры и жизни!</p>
-                <p><span className='bi bi-telephone-outbound-fill'></span><a id="phone_number" href="#">+996 (0)505 888 765</a></p>
+                <p><span className='bi bi-telephone-outbound-fill'></span><a id="phone_number" href="tel:+996505888765">+996 (0)505 888 765</a></p>
                 <p><span className='bi bi-envelope-fill'></span><a id="email" href="mailto:k.otonbaev@gmail.com">k.otonbaev@gmail.com</a></p>
-                <p><span className='bi bi-pin-map-fill'></span><a id="website" href="#">www.au-travel.kg</a></p>
+                <p><span className='bi bi-pin-map-fill'></span><a id="website" href="http://www.au-travel.kg/">www.au-travel.kg</a></p>
             </div>
             <div className="quick-links">
                 <h6>Ссылки</h6>
                 <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Зарубежные туры</a></li>
-                    <li><a href="#">Туры по Кыргызстану</a></li>
-                    <li><a href="#">Наши услуги</a></li>
-                    <li><a href="#">Связаться с нами</a></li>
+                    <li><a href="/about-us">О нас</a></li>
+                    <li><a href="/abroad-tours">Зарубежные туры</a></li>
+                    <li><a href="/local-tours">Туры по Кыргызстану</a></li>
+                    <li><a href="/our-services">Наши услуги</a></li>
+                    <li><a href="/contact-us">Связаться с нами</a></li>
                 </ul>
             </div>
             <div className="support">
             <h6>Поддержка</h6>
                 <ul>
-                    <li><a href="#">Поддержка клиентов</a></li>
-                    <li><a href="#">Политика и конфиденциальность</a></li>
-                    <li><a href="#">Условия & сроки</a></li>
-                    <li><a href="#">Форум</a></li>
-                    <li><a href="#">Гид по сайту</a></li>
+                    <li><a href="/">Поддержка клиентов</a></li>
+                    <li><a href="/">Политика и конфиденциальность</a></li>
+                    <li><a href="/">Условия & сроки</a></li>
+                    <li><a href="/">Форум</a></li>
+                    <li><a href="/">Гид по сайту</a></li>
                 </ul>
             </div>
             <div className="newsletter">

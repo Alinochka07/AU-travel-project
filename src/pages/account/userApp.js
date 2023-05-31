@@ -9,7 +9,7 @@ import SignIn from "./signIn";
 import VerifyEmail from "./verifyEmail";
 import Profile from "./profilePage";
 import PrivateRoute from "./PrivateRoute";
-import Navbar from "../src/pages/navbar";
+// import Navbar from "../src/pages/navbar";
 
 
 

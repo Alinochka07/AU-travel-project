@@ -15,7 +15,6 @@ const SearchFunction = ({tours}) => {
     if(tours) {
             const myTours = Object.entries(tours).map(tour => tour[1])
             const myFilter = myTours.filter(tour => (tour.destination.toLowerCase()).includes(searchValue.toLowerCase()))
-            console.log(myFilter)
         
 
         return <div className="input-group mb-3">
