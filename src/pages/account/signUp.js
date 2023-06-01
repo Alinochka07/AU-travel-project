@@ -89,7 +89,7 @@ export default function SignUp() {
 
     
     const onEmailCheck = (e) => {
-        const isValidEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+        const isValidEmail = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
         if(e.target?.value && e.target.value.match(isValidEmail)) {
             setShowEmailError(false)
         } else {

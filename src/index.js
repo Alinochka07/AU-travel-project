@@ -28,6 +28,7 @@ import 'firebase/storage';
 
 
 
+
 const firebaseConfig = {
 	apiKey: "AIzaSyAvMw4FhVOLXh1BFnz2fVN2-1t0YgsCIok",
 	authDomain: "au-travel.firebaseapp.com",
@@ -75,7 +76,7 @@ export {auth, db, storage};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-		<React.StrictMode>
+		// <React.StrictMode>
 			<Provider store={store}>
 				<ReactReduxFirebaseProvider {...rrfProps}>
 					<BrowserRouter>
@@ -83,7 +84,7 @@ root.render(
 					</BrowserRouter>
 				</ReactReduxFirebaseProvider>
 			</Provider>
-		</React.StrictMode>
+		// </React.StrictMode>
 );
 
 

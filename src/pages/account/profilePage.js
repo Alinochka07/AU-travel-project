@@ -1,3 +1,4 @@
+import React from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "../../index";
 import MainHeader from "../../components/1_main-header";

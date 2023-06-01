@@ -8,6 +8,23 @@
   padding-top: 110px;
 }
 
+.jumbotron_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+button.form_button {
+  border: 1px solid #ff5100;
+  width: 19em;
+  height: 2.1em;
+  border-radius: 4px;
+  background: #ff5100;
+  color: white;
+  box-shadow: 1px 1px 20px 0px #adb3b2;
+}
+
 .container.admin-create-tour {
   padding-top: 155px;
 }
@@ -53,6 +70,7 @@ ul.images-list {
 .images {
   padding-right: 10px;
   display: flex;
+  width: 50%;
 }
 .image-list {
   float: left;
@@ -65,9 +83,11 @@ ul.images-list {
 p.left {
   text-align: left;
 }
+
 .travel-info {
   text-align: left;
   padding-left: 25px;
+  width: 50%;
 }
 .travel-info p {
   font-size: 14px; 
@@ -83,3 +103,6 @@ button.btn.btn-success {
 }
 
 
+.text-warning {
+  padding-top: 40vh;
+}

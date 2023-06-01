@@ -43,7 +43,7 @@ export const AllPopularDestinations = ({tours}) => {
             </div>
     )
     } else {
-        <div className='container section tour-details'>Информация по данному туру загружается, пожалуйста подождите...</div>
+        return <div className='container section tour-details'>Информация по данному туру загружается, пожалуйста подождите...</div>
     }
     
 

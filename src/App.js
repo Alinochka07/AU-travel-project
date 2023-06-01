@@ -15,6 +15,7 @@ import SearchPage from "./pages/searchPage";
 
 
 
+
 function App() {
     const [currentUser, setCurrentUser] = useState([]);
     const [timeActive, setTimeActive] = useState(false);

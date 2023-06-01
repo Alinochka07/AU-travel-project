@@ -1,33 +1,37 @@
 import React, { useEffect, useState, createContext, useContext } from "react";
-import { db } from "../../index";
+// import { db } from "../../index";
 import "./choose-destination.css";
 import { useNavigate } from "react-router-dom";
 import DateChoose from "./date-picker/date-picker";
+import { compose } from "redux";
+import { connect } from "react-redux";
+import { firestoreConnect } from "react-redux-firebase";
 
 
 export const SelectedContext = createContext();
 export const useSelectContext = () => useContext(SelectedContext)
 
 
-const ChooseDestination = ({children}) => {
-    const [tours, setTours] = useState();
+const ChooseDestination = ({tours}) => {
+    console.log(tours)
+    // const [tours, setTours] = useState();
     const [selected, setSelected] = useState();
     
     const navigate = useNavigate()
 
 
-    useEffect(() => {
-        return db.collection('Tours')
-        .onSnapshot((snapshot) => {
-        const tourData = [];
-        snapshot.forEach((doc) => tourData.push({ ...doc.data(), id: doc.id }));
-        setTours(tourData);
-        console.log(tourData);
-        });
-    }, []);
+    // useEffect(() => {
+    //     return db.collection('Tours')
+    //     .onSnapshot((snapshot) => {
+    //     const tourData = [];
+    //     snapshot.forEach((doc) => tourData.push({ ...doc.data(), id: doc.id }));
+    //     setTours(tourData);
+    //     console.log(tourData);
+    //     });
+    // }, []);
   
-    console.log(tours);
-    console.log(selected);
+    // console.log(tours);
+    // console.log(selected);
 
     const handleValueChange = (e) => {
         setSelected(e.target.value)
@@ -36,7 +40,7 @@ const ChooseDestination = ({children}) => {
     const Select = () => {
         return(
             <div>
-                <select className="select_option" value={selected} onChange={handleValueChange}> 
+                <select className="select_option" value={selected} selected={selected} setSelected={setSelected} onChange={handleValueChange}> 
                     <option>Выбрать направление</option>
                     {tours ? (
                         tours.map((tour) => <option key={tour.id} value={tour.id}>{tour.label}</option>)
@@ -49,6 +53,9 @@ const ChooseDestination = ({children}) => {
     const onSelect = () => {
         navigate(`/tours-page/`)
     } 
+    if (tours) {
+        console.log(tours)
+    }
 
     return(
         
@@ -89,7 +96,7 @@ const ChooseDestination = ({children}) => {
                             </tr>
                         </tbody>
                 </table>
-                {children}
+                {/* {children} */}
             </div>
         </SelectedContext.Provider>
        
@@ -97,5 +104,13 @@ const ChooseDestination = ({children}) => {
 }
 
 
-export default ChooseDestination;
+// export default ChooseDestination;
+
+const mapStateToProps = (state) => {
+    return {
+        tours: state.firestore.data.tours
+    }
+    }
+    
+    export default compose(connect(mapStateToProps), firestoreConnect())(ChooseDestination);
 

@@ -1,27 +1,41 @@
 import React, {useState} from "react";
 import "../../components/2_choose-destination/choose-destination.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import { compose } from "redux";
+import { connect } from "react-redux";
+import { firestoreConnect } from "react-redux-firebase";
+import TourDetails from "./tour-details";
 
 
 
 const Destination = ({tours}) => {
 
-    const [selectedValue, setSelectedValue] = useState()
+    const [selectedValue, setSelectedValue] = useState('');
+    const [chosenTour, setChosenTour] = useState([]);
 
     const navigate = useNavigate();
 
 
-    const handleChange = (e) => {
-        setSelectedValue(e.target.value)
-        console.log(selectedValue)
-    }
+    
 
     const onSelect = () => {
+
         return navigate(`/tour/${selectedValue}`)
     }
 
-    return (
-        <div className="choose-destination">
+    if(tours) {
+        const myTours = Object.entries(tours).map(tour => tour[1])
+
+        const handleChange = (e) => {
+            setSelectedValue(e.target.value)
+            setChosenTour(myTours)
+        }
+        console.log(selectedValue, myTours)
+
+      
+        
+
+    return <div className="choose-destination">
                 <table className="table">
                         <thead className="thead">
                             <tr>
@@ -34,12 +48,15 @@ const Destination = ({tours}) => {
                             <tr>
                                 <th>
                                     <div className="static">
-                                        <select className="form-select" onChange={handleChange}>
-                                            <option>Выбрать</option>
-                                            {tours && tours.map((tour) => 
-                                                <option value={tour.id} key={tour.id}>{tour.destination}</option>
-                                            )}
-                                        </select>
+                                    <select className="form-select" onChange={handleChange}>
+                                        <option>Выбрать</option>
+                                        {myTours && myTours.map((tour) => 
+                                            <option value={tour.id} key={tour.id}>{tour.destination}</option>
+                    
+                                            
+                                        )} 
+                                    </select>
+                                    
                                     </div>
                                     
                                 </th>
@@ -56,7 +73,7 @@ const Destination = ({tours}) => {
                                 </th> */}
                                 <th id="button-th">
                                     <div className="input-group mb-3">
-                                        <button className="searchfortour" onClick={onSelect}>Нажми для просмотра</button>
+                                    <Link to={`/tour/${selectedValue}`} state={myTours}><button className="searchfortour" onClick={onSelect}>Нажми для просмотра</button></Link>
                                     </div>
                                     
                                 </th>
@@ -64,7 +81,17 @@ const Destination = ({tours}) => {
                         </tbody>
                 </table>
             </div>
-    )
+    } else {
+        <div>Please, wait for retrieving data from backend</div>
+    }
 }
 
-export default Destination;
+const mapStateToProps = (state) => {
+    return {
+        tours: state.firestore.data.tours
+        
+    }
+    }
+    
+export default compose(connect(mapStateToProps), firestoreConnect())(Destination);
+// export default Destination;
