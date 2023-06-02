@@ -1,4 +1,4 @@
-<h1>AU Travel Web Application</>
+<h1>AU Travel Web Application</h1>
 
 This is a real project that is built on React. This project is still in the process of completion.
 
