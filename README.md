@@ -2,7 +2,7 @@
 
 This is a real project that is built on React. This project is still in the process of completion.
 
-  <h3Used stack: </h3>
+  <h3>Used stack: </h3>
   <ul>
     <li>React.js </li> 
     <li>Redux</li>
