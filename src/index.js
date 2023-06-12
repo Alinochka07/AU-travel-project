@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { render } from 'react-dom';
 import App from './App';
-// import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -73,9 +74,10 @@ const rrfProps = {
 
 export {auth, db, storage};
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-		// <React.StrictMode>
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+
+render(
+	<React.StrictMode>
 			<Provider store={store}>
 				<ReactReduxFirebaseProvider {...rrfProps}>
 					<BrowserRouter>
@@ -83,6 +85,16 @@ root.render(
 					</BrowserRouter>
 				</ReactReduxFirebaseProvider>
 			</Provider>
+		</React.StrictMode>,
+		document.getElementById('root')
+		// <React.StrictMode>
+		// 	<Provider store={store}>
+		// 		<ReactReduxFirebaseProvider {...rrfProps}>
+		// 			<BrowserRouter>
+		// 				<App/>
+		// 			</BrowserRouter>
+		// 		</ReactReduxFirebaseProvider>
+		// 	</Provider>
 		// </React.StrictMode>
 );
 

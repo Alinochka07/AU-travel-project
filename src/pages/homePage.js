@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useMemo } from "react";
 import "../App.css";
 import MainHeader from "../components/1_main-header";
 import BoxMenu from "../components/3_middle-box-menu";
@@ -17,15 +17,25 @@ import Destination from "./tours-page/destination";
 function HomePage(props) {
 
     const { tours } = props;
+
+    useEffect(() => {
+
+      }, [tours]); 
+    
+    const memoizedTours = useMemo(() => {
+        return tours;
+    }, [tours]); 
+
+    
         return(
             <div>
                 <div className="container">
                     <MainHeader/>
-                    <Destination tours={tours}/>
+                    <Destination tours={memoizedTours}/>
                     <BoxMenu/>
-                    <TopDestinations tours={tours}/>
+                    <TopDestinations tours={memoizedTours}/>
                     <ServiceBlock/>
-                    <PopularDestinations tours={tours}/>
+                    <PopularDestinations tours={memoizedTours}/>
                     <FooterInstaBlock/>
                     <Footer/>
                 </div>
