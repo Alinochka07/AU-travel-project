@@ -43,6 +43,7 @@ const firebaseConfig = {
 const rrfConfig = {
 	toursProfile: "tours",
 	userProfile: "users",
+	applicationProfile: "applications",
 	useFirestoreForProfile: true,
 };
 

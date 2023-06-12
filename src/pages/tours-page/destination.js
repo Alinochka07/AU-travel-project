@@ -30,7 +30,6 @@ const Destination = ({tours}) => {
             setSelectedValue(e.target.value)
             setChosenTour(myTours)
         }
-        console.log(selectedValue, myTours)
 
       
         

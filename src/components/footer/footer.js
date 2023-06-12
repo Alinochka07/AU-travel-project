@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
             <hr/>
             <div>
-                <p id="copyright">Copyright @2022 Au Travel. Designed By Md Shamim Hossain</p>
+                <p id="copyright">Copyright @2022 Au Travel</p>
             </div>
         </div>
     )
