@@ -19,7 +19,7 @@
     "react-fontawesome": "^1.7.1",
     "react-phone-number-input": "^3.2.23",
     "react-redux": "^8.0.2",
-    "react-redux-firebase": "^3.11.0",
+    "react-redux-firebase": "3.8.0",
     "react-redux-firestore": "^0.0.1",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
