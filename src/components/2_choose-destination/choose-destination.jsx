@@ -1,4 +1,4 @@
-import React, { useEffect, useState, createContext, useContext } from "react";
+import React, { useState, createContext, useContext } from "react";
 // import { db } from "../../index";
 import "./choose-destination.css";
 import { useNavigate } from "react-router-dom";
@@ -14,24 +14,10 @@ export const useSelectContext = () => useContext(SelectedContext)
 
 const ChooseDestination = ({tours}) => {
     console.log(tours)
-    // const [tours, setTours] = useState();
+   
     const [selected, setSelected] = useState();
     
     const navigate = useNavigate()
-
-
-    // useEffect(() => {
-    //     return db.collection('Tours')
-    //     .onSnapshot((snapshot) => {
-    //     const tourData = [];
-    //     snapshot.forEach((doc) => tourData.push({ ...doc.data(), id: doc.id }));
-    //     setTours(tourData);
-    //     console.log(tourData);
-    //     });
-    // }, []);
-  
-    // console.log(tours);
-    // console.log(selected);
 
     const handleValueChange = (e) => {
         setSelected(e.target.value)

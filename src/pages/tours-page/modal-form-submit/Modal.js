@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import "./Modal.css";
 import { Button } from "@mui/material";
-import { withFirestore } from 'react-firestore';
-import {useParams, useLocation} from "react-router-dom";
-import {FirestoreProvider} from "react-firestore";
+import {useLocation} from "react-router-dom";
+
 // import createApplication from "../../../store/actions/applicationActions";
 import { connect } from "react-redux";
 import { createApplication } from '../../../store/actions/applicationActions';
@@ -11,9 +10,8 @@ import { createApplication } from '../../../store/actions/applicationActions';
 
 
 
-function Modal({setShowModal, showModal, props}) {
+function Modal({setShowModal, showModal}) {
 
-    const {id} = useParams()
     const location = useLocation()
     console.log(location)
 
@@ -24,12 +22,6 @@ function Modal({setShowModal, showModal, props}) {
     const [comment, setComment] = useState('');
     
     
-    // const addApplication = ({name, phone, email, comment, firestore}) => {
-    //     firestore.collection('applications').add({name});
-    //     firestore.collection('applications').add({phone});
-    //     firestore.collection('applications').add({email});
-    //     firestore.collection('applications').add({comment});
-    // }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -93,5 +85,3 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(null, mapDispatchToProps)(Modal);
-
-// export default withFirestore(Modal);

@@ -11,7 +11,7 @@ import Modal from "./modal-form-submit/Modal";
 
 
 
-const TourDetails = (props) => {
+const TourDetails = () => {
 
 
 	const {id} = useParams();
@@ -32,7 +32,7 @@ const TourDetails = (props) => {
             <div className="container section tour-details">
 				{
 					tour.filter((tr) => (tr.id === id)).map(tourr => {
-						return <><p className="left">ID:{id}</p>
+						return <><p className="left">Код тура: <p style={{fontSize: "smaller"}}>{id}</p></p>
 						<div className="jumbotron">
 							<h5 className="display-4"> {tourr.title} </h5> 
 							<p className="lead"><FontAwesomeIcon icon={faLocationDot}/> {tourr.destination}</p>
@@ -47,7 +47,7 @@ const TourDetails = (props) => {
 										{tourr.onbase2 ? <><h6> Проживание в отеле: </h6><p> {tourr.onbase2} </p></> : null}
 										<p>{tourr.details} </p>
 										<h6>Стоимость на одного взрослого от: </h6> <p> ${tourr.price}</p>
-									<button onClick={handleClick} className="form_button"><Link to='' state={selectedId}>Оставить заявку на этот тур!</Link></button>
+									<button onClick={handleClick} className="form_button"><Link style={{color: "white", textDecoration: "none"}} to='' state={selectedId}>Оставить заявку на этот тур!</Link></button>
 								</div>
 								<div className="images">
 									<div className="image-list">

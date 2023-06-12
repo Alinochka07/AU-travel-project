@@ -12,7 +12,7 @@ function PopularDestinations({tours}){
    
 
     const onClick = () => {
-        return navigate('/all-popular-destinations')
+         return navigate('/all-popular-destinations') 
     }
     if(tours) {
         const popTours = Object.entries(tours);

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+// import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -18,7 +19,6 @@ import { BrowserRouter } from "react-router-dom";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
-import 'firebase/auth';
 import thunk from "redux-thunk";
 import { reduxFirestore, getFirestore } from 'redux-firestore';
 import { getFirebase } from 'react-redux-firebase';
@@ -27,17 +27,15 @@ import 'firebase/storage';
 
 
 
-
-
 const firebaseConfig = {
-	apiKey: "AIzaSyAvMw4FhVOLXh1BFnz2fVN2-1t0YgsCIok",
-	authDomain: "au-travel.firebaseapp.com",
-	projectId: "au-travel",
-	storageBucket: "au-travel.appspot.com",
-	messagingSenderId: "201367498567",
-	appId: "1:201367498567:web:75a7c3ba806fdf39d3a662",
-	measurementId: "G-NRQFR2V4SG"
-};
+	apiKey: "AIzaSyAfVx2EXEVSyXORDSNOM0OjbegrzUZHWJU",
+	authDomain: "au-react.firebaseapp.com",
+	projectId: "au-react",
+	storageBucket: "au-react.appspot.com",
+	messagingSenderId: "368538936254",
+	appId: "1:368538936254:web:7d3dea3cb87fbcca0f4fef",
+	measurementId: "G-HRE16DWGMX"
+  };
 
 
 const rrfConfig = {
